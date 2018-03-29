@@ -1,0 +1,26 @@
+#
+#spring:
+## Redis配置
+#  redis:
+#    host: 10.10.10.148
+#    port: 6379
+#    password: redis
+
+## 服务路由配置
+#zuul:
+#  routes:
+#    test:
+#      path: /api/**
+#      url: http://localhost:8080/
+## 服务限流配置
+#  ratelimit:
+#    enabled: true
+#    repository: REDIS
+#    policies:
+#      test:
+#        limit: 100
+#        refreshInterval: 60
+#        type:
+#          - ORIGIN
+#
+#strip-prefix: true
